@@ -43,7 +43,15 @@ public class DynamicXpath {
 		 
 		 driver.findElement(By.xpath("//button[ends-with(@id,'-a')]")).click(); //Not support in the current chrome version(xml version 1.0)(only from xml version 2.0)
 		 
+		driver.findElement(By.xpath("//input[@type='submit' and @value='Login']")).click();
 		
+		driver.findElement(By.xpath("//a[text()='Features']")).click();
+		
+		driver.findElement(By.xpath("//a[contains(text(),'Features')]")).click();
+		
+		driver.findElement(By.xpath("//a[contains(text(),'Muktha Sharma')]//parent::td//preceding-sibling::td//input[@name='contact_id']")).click();
+		
+		driver.findElements(By.xpath("//ul[@role='listbox']//li//descendant::div[@class='sbl1']"));
 
 	}
 

@@ -13,14 +13,26 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
+  
+    <repositories>
+    <repository>
+      <id>sonatype-ossrh</id>
+      <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
+    </repository>
+  </repositories>
 
   <dependencies>
     <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>4.12</version>
-      <scope>test</scope>
+      <groupId>com.sikulix</groupId>
+      <artifactId>sikulixapi</artifactId>
+      <version>1.1.4-SNAPSHOT</version>
     </dependency>
+    <dependency>
+    <groupId>org.testng</groupId>
+    <artifactId>testng</artifactId>
+    <version>7.0.0</version>
+    <scope>test</scope>
+</dependency>
     <dependency>
       <groupId>org.seleniumhq.selenium</groupId>
       <artifactId>selenium-java</artifactId>
@@ -64,6 +76,41 @@
     <artifactId>cucumber-reporting</artifactId>
     <version>4.2.3</version>
 </dependency>
+<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi-ooxml</artifactId>
+			<version>3.9</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi-ooxml-schemas</artifactId>
+			<version>3.9</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi-scratchpad</artifactId>
+			<version>3.9</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>ooxml-schemas</artifactId>
+			<version>1.1</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>openxml4j</artifactId>
+			<version>1.0-beta</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi</artifactId>
+			<version>3.9</version>
+		</dependency>
     <dependency>
     <groupId>javax.mail</groupId>
     <artifactId>mail</artifactId>
@@ -74,7 +121,12 @@
     <artifactId>jfairy</artifactId>
     <version>0.5.9</version>
 </dependency>
-
+<dependency> 
+    <groupId>net.sourceforge.htmlunit</groupId>
+    <artifactId>webdriver</artifactId>
+    <version>2.6</version>
+    <scope>test</scope>
+</dependency>
   </dependencies>
    <build>
      <plugins>
